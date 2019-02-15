@@ -1,0 +1,97 @@
+/* pages/wordpage/wordpage.wxss */
+.container {
+  text-align: center;
+  background-color: #eee;
+}
+
+.tab_form {
+  width: 100%;
+  align-items: center;
+}
+
+.tab_header {
+  border-radius: 15rpx;
+  margin: 10rpx auto;
+  padding: 8rpx;
+  width: 95%;
+  background-color: #fff;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.tab_header input {
+  width: 95%;
+  border-bottom: 1rpx solid black;
+  margin: 10rpx auto;
+}
+
+.tab_body {
+  border-radius: 15rpx;
+  margin: 10rpx auto;
+  padding: 8rpx;
+  width: 95%;
+  background-color: #fff;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.tab_row {
+ height: 900rpx;
+}
+
+/** 隐藏滚动条 **/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.word_body {
+  padding-bottom:50rpx;
+  border-bottom:1rpx dashed #666;
+}
+
+.tab_row textarea {
+  width: 95%;
+  border: 1rpx solid #000;
+  border-radius: 15rpx;
+  margin: 40rpx auto;
+}
+
+.tab_row input {
+  width: 80%;
+  border-bottom: 1rpx solid #000;
+  margin: 10rpx auto;
+}
+
+.operate {
+  display: flex;
+  flex-direction: row;
+  margin:0rpx auto;
+  padding: 15rpx 0rpx 7rpx 0rpx;
+  width: 100%;
+  align-items: center;
+  border-top:1rpx solid #aaa; 
+}
+
+.operate button {
+  border-radius: 50rpx;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 900;
+  border: 1rpx solid black;
+}
+
+.tab_foot {
+  align-items: center;
+  border-radius: 15rpx;
+  margin: 10rpx auto;
+  width: 97%;
+  background-color: #fff;
+}
+
+.tab_foot button {
+  line-height: 2;
+  background-color: rgb(15, 177, 29);
+}

@@ -1,0 +1,33 @@
+/* pages/home.wxss */
+.container {
+  padding: 245rpx 0;
+  background-color: #eee;
+}
+
+.titleInfo {
+  color: #aaa;
+}
+
+.excelIocn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.excelIocn-avatar{
+    width:200rpx;
+    height:200rpx;
+    margin-top:60rpx;
+}
+
+.wordIocn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wordIocn-avatar{
+    width:200rpx;
+    height:200rpx;
+    margin-top:150rpx;
+}

@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/excelpage/excelpage",
+    "pages/home/home",
+    "pages/wordpage/wordpage",
+    "pages/show/show",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ExcelTools",
+    "navigationBarTextStyle": "black"
+  }
+}

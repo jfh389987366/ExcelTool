@@ -1,0 +1,11 @@
+<!--pages/home.wxml-->
+<view class="container">
+  <view class="excelIocn" bindtap="gotoExcelPage">
+    <image class="excelIocn-avatar" src="{{excelIocn}}" mode="cover"></image>
+    <text class="titleInfo">{{excelInfo}}</text>
+  </view>
+  <view class="wordIocn" bindtap="gotoWordPage">
+    <image class="wordIocn-avatar" src="{{wordIocn}}" mode="cover"></image>
+    <text class="titleInfo">{{wordInfo}}</text>
+  </view>
+</view>

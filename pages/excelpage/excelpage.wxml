@@ -1,0 +1,19 @@
+<!--pages/excelpage/excelpage.wxml-->
+<view class='container'>
+  <form class='tab_form' bindsubmit='formSubmit'>
+    <view class='tab_header'><!-- 表名 -->
+      <input name='tabName' placeholder="表单名称" type='text' bindlongpress='inti' auto-focus />
+    </view>
+    <view class='tab_body'><!-- 字段名 -->
+      <scroll-view scroll-y class='tab_row' bindscrolltolower="lower" >
+        <view wx:for='{{rowArr}}' wx:key='{{index}}' >
+          <input name='rowRowName{{index}}' placeholder='列名{{index}}' type='text' bindlongpress='del'/>
+        </view>
+      </scroll-view>
+      <text class='optip' bindlongpress='setRowNumber'>{{optip}}</text>
+    </view>
+    <view class="tab_foot"><!-- 保存 -->
+      <button class="save" form-type='submit'>保存</button>
+    </view>
+  </form>
+</view>

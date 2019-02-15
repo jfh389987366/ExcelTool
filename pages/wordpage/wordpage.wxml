@@ -1,0 +1,26 @@
+<!--pages/wordpage/wordpage.wxml-->
+<view class='container'>
+  <form class='tab_form' bindsubmit='formSubmit'>
+    <view class='tab_header'><!-- 文档名 -->
+      <input name='wordName' placeholder="文档名称" type='text' auto-focus bindfocus='blurFun'/>
+    </view>
+    <view class='tab_body'><!-- 文档主体 -->
+      <scroll-view scroll-y class='tab_row'>
+        <!--小题主体-->
+        <view class='word_body' wx:for='{{rowArr}}' wx:key='{{index}}'>
+          <textarea name='content{{index}}' class='content' placeholder='小题{{index}}内容' bindfocus='blurFun' />
+          <!-- 选择是否上传图片 以及选线为多选还是单选 -->
+          <switch name='selecterType{{index}}' bindchange='switchChange' checked />
+          <input bindfocus='focusFun' wx:for='{{labelArr}}' wx:key='{{index}}' name='selecter{{index}}' placeholder='{{selecterType?"单选":"多选"}}{{index}}' bindlongtap='delIt' />
+        </view>
+      </scroll-view>
+      <view class="operate">
+        <button class="add" catchtap='addRow' data-type='{{dataType}}'>＋</button>
+        <button class="del" catchtap='delRow' data-type='{{dataType}}'>－</button>
+      </view>
+    </view>
+    <view class="tab_foot"><!-- 保存 -->
+      <button class="save" form-type='submit'>预览/保存</button>
+    </view>
+  </form>
+</view>

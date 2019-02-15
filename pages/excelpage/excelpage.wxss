@@ -1,0 +1,72 @@
+/* pages/excelpage/excelpage.wxss */
+.container {
+  text-align: center;
+  background-color: #eee;
+}
+
+.tab_form {
+  width: 100%;
+  align-items: center;
+}
+
+.tab_header {
+  border-radius: 15rpx;
+  margin: 10rpx auto;
+  padding: 8rpx;
+  width: 95%;
+  background-color: #fff;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.tab_header input {
+  width: 95%;
+  border-bottom: 1rpx solid black;
+  margin: 15rpx auto;
+}
+
+.tab_body {
+  border-radius: 15rpx;
+  margin: 15rpx auto;
+  padding: 8rpx;
+  width: 95%;
+  background-color: #fff;
+  align-items: center;
+  font-size: 26rpx;
+}
+
+.tab_row {
+ height: 888rpx;
+ margin: 20rpx auto;
+}
+
+/** 隐藏滚动条 **/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.tab_row input {
+  width: 90%;
+  border-bottom: 1rpx solid #000;
+  margin: 40rpx auto;
+}
+
+.optip {
+  color: #aaa;
+  font-size: 30rpx;
+}
+
+.tab_foot {
+  align-items: center;
+  border-radius: 15rpx;
+  margin: 15rpx auto;
+  width: 97%;
+  background-color: #fff;
+}
+
+.tab_foot button {
+  line-height: 2;
+  background-color: rgb(15, 177, 29);
+}
